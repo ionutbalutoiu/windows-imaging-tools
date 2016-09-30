@@ -342,9 +342,11 @@ function Download-CloudbaseInit {
     Write-Host "Downloading Cloudbase-Init..."
 
     if ($osArch -eq "AMD64") {
-        $CloudbaseInitMsi = "CloudbaseInitSetup_Stable_x64.msi"
+        # $CloudbaseInitMsi = "CloudbaseInitSetup_Stable_x64.msi"
+        $CloudbaseInitMsi = "CloudbaseInitSetup_x64.msi"
     } else {
-        $CloudbaseInitMsi = "CloudbaseInitSetup_Stable_x86.msi"
+        # $CloudbaseInitMsi = "CloudbaseInitSetup_Stable_x86.msi"
+        $CloudbaseInitMsi = "CloudbaseInitSetup_x86.msi"
     }
 
     $CloudbaseInitMsiPath = "$resourcesDir\CloudbaseInit.msi"
